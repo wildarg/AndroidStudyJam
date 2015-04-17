@@ -3,7 +3,7 @@
     package="com.wild.androidstudyjam.wakeapp" >
 
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
