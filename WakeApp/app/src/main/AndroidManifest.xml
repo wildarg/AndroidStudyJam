@@ -14,10 +14,19 @@
             android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".WakeUpActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.wild.androidstudyjam.wakeapp.WAKEUP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".WakeUpIntentService"/>
+        <service android:name=".WakeUpService"/>
     </application>
 
 </manifest>
