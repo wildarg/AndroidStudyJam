@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/itemLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/primary_text"
+        android:text="12:00, 25.05.2015"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"/>
+
+    <TextView
+        android:id="@+id/iconTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/timeTextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:text="O"/>
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iconTextView"
+        android:layout_alignTop="@+id/iconTextView"
+        android:textColor="@color/primary_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:text="Clear"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTextView"
+        android:layout_alignLeft="@+id/mainTextView"
+        android:textColor="@color/primary_text"
+        android:text="Sky is clear"/>
+
+
+    <TextView
+        android:id="@+id/pressureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@+id/mainTextView"
+        android:textColor="@color/primary_text"
+        android:text="pressure: 993,8"/>
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressureTextView"
+        android:layout_alignLeft="@+id/mainTextView"
+        android:textColor="@color/primary_text"
+        android:text="humidity: 72%"/>
+
+    <TextView
+        android:id="@+id/tempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iconTextView"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:textColor="@color/primary_text"
+        android:fontFamily="sans-serif-light"
+        android:text="6°C"/>
+
+</RelativeLayout>
