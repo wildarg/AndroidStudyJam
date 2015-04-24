@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.PowerManager;
 import android.os.Bundle;
+import android.text.format.Time;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class MainActivity extends Activity {
@@ -45,6 +48,18 @@ public class MainActivity extends Activity {
                 new TestTask().execute(Long.valueOf(40000));
             }
         });
+
+        findViewById(R.id.wakeLockerButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startWakeLockerService();
+            }
+        });
+    }
+
+    private void startWakeLockerService() {
+        Log.d(LOG_TAG, "start wakelocker service");
+        startService(new Intent(getApplicationContext(), WakeLockerService.class));
     }
 
     private void startWakeUpService() {

@@ -28,6 +28,7 @@
         </activity>
         <service android:name=".WakeUpIntentService"/>
         <service android:name=".WakeUpService"/>
+        <service android:name=".WakeLockerService"/>
     </application>
 
 </manifest>
