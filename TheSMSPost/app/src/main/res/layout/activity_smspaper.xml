@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:minWidth="300dp"
+    android:background="@drawable/paper_background">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/header"
+        android:gravity="center_horizontal|top"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:textSize="8dp"
+        android:text="24 апреля\n2015"
+        android:gravity="center"
+        android:textColor="#444"/>
+
+    <TextView
+        android:id="@+id/weekdayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:textSize="8dp"
+        android:text="пятница"
+        android:gravity="center"
+        android:textColor="#444"/>
+
+    <View
+        android:id="@+id/lineHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/headerTextView"
+        android:layout_marginBottom="32dp"
+        android:background="@color/line_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lineHeaderView"
+        android:layout_marginBottom="1dp"
+        android:background="@color/line_color"/>
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/lineHeaderView"
+        android:background="@color/paper_block_background"/>
+
+    <TextView
+        android:id="@+id/authorNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photoImageView"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="User Name"
+        android:textColor="#222"/>
+
+    <View
+        android:id="@+id/lineAuthorView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/authorNameTextView"
+        android:layout_toRightOf="@+id/photoImageView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/line_color"/>
+
+    <TextView
+        android:id="@+id/smsContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/photoImageView"
+        android:layout_below="@+id/authorNameTextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#333"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor "/>
+
+</RelativeLayout>

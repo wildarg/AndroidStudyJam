@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SMSPostTheme" parent="android:Theme.Holo.Light.Dialog">
+        <!--item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item-->
+        <item name="android:windowAnimationStyle">@style/TheSMSPost</item>
+    </style>
+
+    <style name="TheSMSPost" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/sms_post_rotate</item>
+    </style>
+
+
+
+
+</resources>
