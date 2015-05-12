@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/operation_editor_width"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/primary_dark">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:text="Перевод"/>
+
+        <ImageButton
+            android:id="@+id/doneButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/ic_done_white_36dp"
+            android:background="@drawable/action_button_background"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding = "16dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/plannedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="right"
+                android:text="Плановая операция" />
+
+            <TextView
+                android:id="@+id/dateTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:labelFor="@+id/dateTextView"
+                android:textColor="@color/secondary_text_light"
+                android:text="Дата"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:drawableRight="@mipmap/ic_expand_more_grey600_18dp"
+                android:editable="false"
+                android:gravity="bottom"
+                android:clickable="true"
+                android:background="@drawable/text_field_background" />
+
+            <TextView
+                android:id="@+id/fromCashTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:labelFor="@+id/fromCashType"
+                android:textColor="@color/secondary_text_light"
+                android:text="Откуда"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/fromCashType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                android:completionThreshold="1"/>
+
+            <TextView
+                android:id="@+id/toCashTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:labelFor="@+id/toCashType"
+                android:textColor="@color/secondary_text_light"
+                android:text="Куда"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/toCashType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                android:completionThreshold="1"/>
+
+            <TextView
+                android:id="@+id/sumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:labelFor="@+id/sumEditText"
+                android:textColor="@color/secondary_text_light"
+                android:text="Сумма"/>
+
+            <EditText
+                android:id="@+id/sumEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/descriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:labelFor="@+id/descriptionTextView"
+                android:textColor="@color/secondary_text_light"
+                android:text="Описание"/>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionDone"
+                android:completionThreshold="2"
+                android:textColorLink="@color/primary_dark"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TheSMSPost.iml" filepath="$PROJECT_DIR$/TheSMSPost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Portmone.iml" filepath="$PROJECT_DIR$/Portmone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

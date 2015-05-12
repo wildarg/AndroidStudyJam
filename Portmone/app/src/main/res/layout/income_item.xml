@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="12 апр\n2015" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/dateTextView"
+        android:layout_alignTop="@+id/dateTextView"
+        android:layout_marginTop="10dp"
+        android:background="#2000"/>
+
+    <TextView
+        android:id="@+id/incomeTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/sumTextView"
+        android:layout_toRightOf="@+id/dateTextView"
+        android:layout_marginLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:text="Зарплата"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incomeTypeTextView"
+        android:layout_toLeftOf="@+id/sumTextView"
+        android:layout_alignLeft="@+id/incomeTypeTextView"
+        android:textColor="@color/secondary_text"
+        android:textColorLink="@color/primary_dark"
+        android:text="lorem #ipsum dolor sit amet"
+        android:focusable="false"
+        android:clickable="false"
+        android:linksClickable="false" />
+
+    <TextView
+        android:id="@+id/sumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/primary_dark"
+        android:text="100 000.00"/>
+
+    <TextView
+        android:id="@+id/cashTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sumTextView"
+        android:fontFamily="sans-serif-light"
+        android:text="Наличные"/>
+
+</RelativeLayout>

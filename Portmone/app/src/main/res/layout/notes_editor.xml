@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="200dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/primary_dark">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:text="Заметки"/>
+
+        <ImageButton
+            android:id="@+id/doneButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/ic_done_white_36dp"
+            android:background="@drawable/action_button_background"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/notesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:lines="10"
+        android:gravity="top|left"
+        android:textColor="@color/secondary_text">
+        <requestFocus/>
+    </EditText>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_background">
+
+    <!--View
+        android:id="@+id/roundView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/splash_icon_round"/-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/appNameTextView"
+        android:layout_alignTop="@+id/appNameTextView"
+        android:layout_marginTop="-100dp"
+        android:layout_marginLeft="40dp"
+        android:src="@mipmap/ic_portmone_shadow"/>
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Портмоне"/>
+    <TextView
+        android:id="@+id/appDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appNameTextView"
+        android:textSize="20sp"
+        android:textColor="#DCEDC8"
+        android:gravity="center"
+        android:text="Учет личных финансов"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loginButtonTextView"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:background="@drawable/splash_button_background"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="Вход"/>
+
+        <TextView
+            android:id="@+id/regButtonTextView"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:background="@drawable/splash_button_background"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:text="Регистрация"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

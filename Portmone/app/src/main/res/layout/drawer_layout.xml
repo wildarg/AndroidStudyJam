@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/userBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/default_accaunt_image"/>
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:src="@mipmap/ic_person"/>
+
+    <TextView
+        android:id="@+id/personNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personImage"
+        android:layout_alignLeft="@+id/personImage"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personNameTextView"
+        android:layout_alignLeft="@+id/personNameTextView"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/primary_light"/>
+
+    <TextView
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:drawableTop="@mipmap/ic_exit_to_app_white_24dp"
+        android:textColor="#fff"
+        android:background="@drawable/action_button_background"
+        android:text="Выход"
+        android:clickable="true"/>
+
+
+    <TextView
+        android:id="@+id/datesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userBackgroundImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="34dp"
+        android:textColor="@color/secondary_text_light"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Рабочий период"/>
+
+    <TextView
+        android:id="@+id/startDateTextView"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/datesLabel"
+        android:drawableRight="@mipmap/ic_expand_more_grey600_18dp"
+        android:editable="false"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/text_field_background"
+        android:text="01.01.2015"/>
+
+    <TextView
+        android:id="@+id/endDateTextView"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/startDateTextView"
+        android:layout_alignTop="@+id/startDateTextView"
+        android:drawableRight="@mipmap/ic_expand_more_grey600_18dp"
+        android:editable="false"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/text_field_background"
+        android:text="31.01.2015"/>
+
+    <CheckBox
+        android:id="@+id/plannedCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/startDateTextView"
+        android:text="Отображать плановые операции"/>
+
+    <TextView
+        android:id="@+id/notesEditButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plannedCheckBox"
+        android:layout_margin="16dp"
+        android:textColor="@color/secondary_text_light"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Заметки"
+        android:gravity="center_vertical"
+        android:drawableRight="@android:drawable/ic_menu_edit"
+        android:clickable="true"
+        android:background="@drawable/action_button_background"/>
+
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notesEditButton"
+        android:textColor="@color/secondary_text"
+        android:gravity="top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:textColorLink="@color/primary_dark"/>
+
+</RelativeLayout>
+</ScrollView>
